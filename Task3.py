@@ -19,8 +19,7 @@
 def reverse(num):
     if num < 10:
         return str(num)
-    else:
-        return str(num % 10) + reverse(num // 10) 
+    return str(num % 10) + reverse(num // 10) 
 
 num = int(input('Введите число, которое требуется перевернуть: '))
 

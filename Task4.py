@@ -13,10 +13,9 @@
 def func(c):
     if c == 1:
         return 1
-    else:
-        return func(c-1) + (-0.5)**(c-1)
+    return func(c-1) + (-0.5)**(c-1)
 
 
 count = int(input('Введите количество элементов: '))
 
-print(f'Количество элементов - {count:.3f}, их сумма - {func(count)}')
+print(f'Количество элементов - {count}, их сумма - {func(count)}')

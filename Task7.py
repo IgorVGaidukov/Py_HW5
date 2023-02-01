@@ -15,8 +15,7 @@
 def sum(count):
     if count == 1:
         return 1
-    else:
-        return sum(count-1) + count
+    return sum(count-1) + count
 
 
 n = 5
