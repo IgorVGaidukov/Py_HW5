@@ -10,3 +10,22 @@
 Правой части выражения в рекурсивной ф-ции быть не должно!
 Решите через рекурсию. В задании нельзя применять циклы.
 """
+
+
+def sum(count):
+    if count == 1:
+        return 1
+    else:
+        return sum(count-1) + count
+
+
+n = 5
+s = ''
+
+print(f'для n = {n}')
+if sum(n) == n*(n+1)/2:
+    for i in range(1, n+1):
+        s += str(i)
+        if i < n:
+            s += '+'
+    print(f'{s} = {n}({n}+1)/2')
