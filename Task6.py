@@ -23,9 +23,9 @@ def check_num(i, n):
                 print('Загаданное число меньше введенного')
             else:
                 print('Загаданное число больше введенного')
-            check_num(i-1, n)
+            check_num(i - 1, n)
 
 
-attempt_num = 10    # число попыток
+attempt_num = 10  # число попыток
 
 check_num(attempt_num, random.randint(1, 100))

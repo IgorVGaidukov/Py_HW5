@@ -23,7 +23,7 @@ def print_char(i):
     if i % 10 == 1:
         print()
     if i < 127:
-        print_char(i+1)
+        print_char(i + 1)
 
 
 print_char(33)

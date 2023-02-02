@@ -16,10 +16,12 @@
 1230 -> 0321
 """
 
+
 def reverse(num):
     if num < 10:
         return str(num)
-    return str(num % 10) + reverse(num // 10) 
+    return str(num % 10) + reverse(num // 10)
+
 
 num = int(input('Введите число, которое требуется перевернуть: '))
 
