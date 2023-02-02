@@ -12,17 +12,17 @@
 """
 
 
-def sum(count):
+def sum_num(count):
     if count == 1:
         return 1
-    return sum(count - 1) + count
+    return sum_num(count - 1) + count
 
 
 n = 5
 s = ''
 
 print(f'для n = {n}')
-if sum(n) == n * (n + 1) / 2:
+if sum_num(n) == n * (n + 1) / 2:
     for i in range(1, n + 1):
         s += str(i)
         if i < n:
